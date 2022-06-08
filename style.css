@@ -23,4 +23,13 @@ h1 {
   font-weight: 700;
   margin: 20px 5px 20px 5px;
   border-radius: 15px;
+  padding: 0.5rem;
+}
+main > p {
+  margin-bottom: 3rem;
+}
+.review {
+  background-color: var(--txt-main);
+  color: hsl(300, 24%, 96%);
+  border-radius: 9px;
 }
