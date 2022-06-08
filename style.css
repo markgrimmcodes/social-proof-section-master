@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: league spartan;
+  text-align: center;
+  --txt-main: hsl(300, 43%, 22%);
+  --txt-sec: hsl(333, 80%, 67%);
+  color: var(--txt-main);
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+main {
+  padding: 1rem;
+}
+h1 {
+  padding-top: 1rem;
+}
+.stars {
+  background-color: hsl(300, 24%, 96%);
+  font-weight: 700;
+  margin: 20px 5px 20px 5px;
+  border-radius: 15px;
+}
