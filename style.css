@@ -92,6 +92,14 @@ main > p {
     grid-column: 3;
     grid-row: 1;
   }
+  .stars {
+    box-shadow: 2px 4px 4px var(--txt-sec);
+    transition: 0.2s;
+  }
+  .stars:hover {
+    transform: scale(1.01);
+    box-shadow: 4px 8px 8px var(--txt-sec);
+  }
   .one {
     position: relative;
     right: 14rem;
@@ -100,6 +108,7 @@ main > p {
     position: relative;
     right: 7rem;
   }
+
   .ire {
     position: relative;
     top: 1rem;
