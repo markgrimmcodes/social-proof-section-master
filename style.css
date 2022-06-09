@@ -66,7 +66,7 @@ main > p {
   gap: 1rem;
   padding-bottom: 1.5rem;
 }
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 690px) {
   main {
     background: url(/images/bg-pattern-top-desktop.svg) left top no-repeat,
       url(/images/bg-pattern-bottom-desktop.svg) right bottom no-repeat;
@@ -117,7 +117,7 @@ main > p {
     top: 2rem;
   }
 }
-@media screen and (min-width: 989px) {
+@media screen and (min-width: 786px) {
   body {
     background: url(https://freefrontend.com/assets/img/css-background-patterns/simple-pattern-with-css3.png);
     background-size: cover;
@@ -135,5 +135,8 @@ main > p {
   }
   body > * {
     width: min(900px, 100%);
+  }
+  header {
+    transform: translate(10%, 20%);
   }
 }
