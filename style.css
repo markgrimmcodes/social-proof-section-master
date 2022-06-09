@@ -3,9 +3,10 @@
 }
 html {
   font-family: league spartan;
-  text-align: center;
+
   --txt-main: hsl(300, 43%, 22%);
   --txt-sec: hsl(333, 80%, 67%);
+  --bckgrd-light: hsl(300, 24%, 96%);
   color: var(--txt-main);
 }
 body {
@@ -17,19 +18,35 @@ main {
 }
 h1 {
   padding-top: 1rem;
+  text-align: center;
+}
+.subheader {
+  text-align: center;
 }
 .stars {
-  background-color: hsl(300, 24%, 96%);
+  background-color: var(--bckgrd-light);
   font-weight: 700;
   margin: 20px 5px 20px 5px;
   border-radius: 15px;
   padding: 0.5rem;
+  text-align: center;
 }
 main > p {
   margin-bottom: 3rem;
 }
+.persons > .review {
+  margin-bottom: 1rem;
+}
 .review {
   background-color: var(--txt-main);
-  color: hsl(300, 24%, 96%);
+  color: var(--bckgrd-light);
   border-radius: 9px;
+  padding: 1rem;
+}
+.verified {
+  color: var(--txt-sec);
+}
+.pic {
+  width: 50px;
+  border-radius: 50%;
 }
