@@ -19,8 +19,7 @@ main {
 
   padding: 1rem;
 }
-@media screen and (min-width: 768px) {
-}
+
 h1 {
   padding-top: 1rem;
   text-align: center;
@@ -67,13 +66,13 @@ main > p {
   gap: 1rem;
   padding-bottom: 1.5rem;
 }
-@media screen and (min-width: 690px) {
+@media screen and (min-width: 786px) {
   main {
     background: url(/images/bg-pattern-top-desktop.svg) left top no-repeat,
       url(/images/bg-pattern-bottom-desktop.svg) right bottom no-repeat;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 60% min-content;
   }
   .persons {
     display: flex;
@@ -116,5 +115,25 @@ main > p {
   .anne {
     position: relative;
     top: 2rem;
+  }
+}
+@media screen and (min-width: 989px) {
+  body {
+    background: url(https://freefrontend.com/assets/img/css-background-patterns/simple-pattern-with-css3.png);
+    background-size: cover;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    place-content: center;
+  }
+
+  main {
+    background: snow;
+    padding-bottom: 4rem;
+    box-shadow: 4px 8px var(--txt-main);
+    border-radius: 12px;
+  }
+  body > * {
+    width: min(900px, 100%);
   }
 }
