@@ -14,7 +14,12 @@ body {
   margin: 0;
 }
 main {
+  background: url(/images/bg-pattern-top-mobile.svg) left top no-repeat,
+    url(/images/bg-pattern-bottom-mobile.svg) right bottom no-repeat;
+
   padding: 1rem;
+}
+@media screen and (min-width: 768px) {
 }
 h1 {
   padding-top: 1rem;
@@ -62,6 +67,45 @@ main > p {
   gap: 1rem;
   padding-bottom: 1.5rem;
 }
-.name-wrap {
-  gap: ;
+@media screen and (min-width: 690px) {
+  main {
+    background: url(/images/bg-pattern-top-desktop.svg) left top no-repeat,
+      url(/images/bg-pattern-bottom-desktop.svg) right bottom no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .persons {
+    display: flex;
+    gap: 1rem;
+    grid-column: span 3;
+  }
+  h1 {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .subheader {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .star-reviews {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .one {
+    position: relative;
+    right: 14rem;
+  }
+  .two {
+    position: relative;
+    right: 7rem;
+  }
+  .ire {
+    position: relative;
+    top: 1rem;
+  }
+  .anne {
+    position: relative;
+    top: 2rem;
+  }
 }
